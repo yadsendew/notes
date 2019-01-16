@@ -45,6 +45,25 @@ Using precision for floating-point numbers
 
 ![](images/2019-01-15-2.png)
 
+### Using Flag with `printf()`
+#### `-` and `+`
+    printf( "%10s%10d%10c%10f\n\n", "hello", 7, 'a', 1.23 );
+    printf( "%-10s%-10d%-10c%-10f\n", "hello", 7, 'a', 1.23 );
+    >     hello         7         a   1.230000
+    >hello     7         a         1.230000
+#### `(space)`
+
+#### `#`
+
+#### `0`
+
+### Numbers are read seperately by `'-'`
+```
+scanf("%d-%d-%d-%d, a, b, c, d);
+<23-4-4-60
+>a: 23, b: 4, c: 4, d: 60
+```
+
 ### Scanset specifier: ```%[]``` 
 
 Read only capital letters to character array ```str```, until noncapital letter [A-Z] appear then stop reading.  
