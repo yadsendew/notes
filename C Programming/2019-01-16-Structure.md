@@ -1,8 +1,9 @@
 # Structure
+### Note: Should not declare string elements of `struct` by `char *string`. Using `char string[]` instead.
 ```c
 struct Student {
       char Name[20];
-      float Grade;
+      int ID;
       int Age;
       char Class[20];
 } student;
@@ -27,3 +28,21 @@ int main()
 2. Use `gets()` for string input, `scanf()` for number input.
 3. Return `s1`  
 Note: Should place `gets(`_string_ `)` above a `scanf(`_number_`)`
+### Call by reference with Structure
+```
+struct Student {
+      char Name[20];
+      int ID;
+      int Age;
+      char Class[20];
+} student;
+void Input(struct Student *student1){
+    printf("Enter name: ");
+    // Vì Name là string, Name vốn là pointer của string. Không cần lấy & nữa.
+    scanf("%[^\n]%*c", student1 --> Name);
+    printf("Enter student ID: ");
+    // hàm scanf cần pointer của biến, &(student1 --> ID) lấy địa chỉ của biến.
+    scanf(%d), &(student1 --> ID));
+}
+```
+Note: `%[^\n]%*c` lấy các ký tự của hàng cho tới khi gặp '`\n`'.
