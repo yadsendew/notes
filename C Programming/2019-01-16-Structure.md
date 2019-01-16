@@ -6,7 +6,7 @@ struct Student {
       int ID;
       int Age;
       char Class[20];
-} student;
+};
 
 struct Student input(){
     struct Student s1;
@@ -35,14 +35,12 @@ struct Student {
       int ID;
       int Age;
       char Class[20];
-} student;
-void Input(struct Student *student1){
-    printf("Enter name: ");
-    // Vì Name là string, Name vốn là pointer của string. Không cần lấy & nữa.
-    scanf("%[^\n]%*c", student1 --> Name);
-    printf("Enter student ID: ");
-    // hàm scanf cần pointer của biến, &(student1 --> ID) lấy địa chỉ của biến.
-    scanf(%d), &(student1 --> ID));
+};
+void input(struct Student *a){
+    // a->Name là biến string, nó đã là pointer nên không cần thêm &.
+	printf("Name: "); gets(a->Name);
+	printf("Class: "); gets(a->Class);
+	printf("Code: "); scanf("%d", &(a->Code));
+	printf("Age: "); scanf("%d", &(a->Age));
 }
 ```
-Note: `%[^\n]%*c` lấy các ký tự của hàng cho tới khi gặp '`\n`'.
