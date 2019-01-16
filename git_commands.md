@@ -1,0 +1,8 @@
+## Push code to Github
+```
+$ git add --all
+
+$ git commit -m "Initial commit"
+
+$ git push -u origin master
+```
