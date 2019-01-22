@@ -44,3 +44,23 @@ void input(struct Student *a){
 	printf("Age: "); scanf("%d", &(a->Age));
 }
 ```
+#  `typedef`
+```
+typedef struct {
+    char *face;
+    char *suit; 
+} Card;
+```
+# `union`
+Kiểu dữ liệu `union number` mang hai kiểu: `int` và `double`: 
+```c
+union number {
+    int x;
+    double y;
+}
+```
+Giả sử tạo biến `value` mang kiểu dữ liệu `union number`:
+```
+union number value = { 10 }; // int
+union number value = { 1.43 }; // double
+```
