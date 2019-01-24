@@ -130,3 +130,16 @@ int main(){
 	return 0;
 }
 ```
+## SORTING LINKED LIST HAS MORE THAN 2 ELEMENTS.
+`Insert()` is the function while read input from user it also chooses right position to place that input in linked list. Only sort by name or by age. 
+```c
+struct node {
+    char name[20];
+    int age;
+    struct node * nextPtr;
+}
+```
+How do I sort by age for a linked list that has sorted by name before?  
+*"SON, YOU ONLY NEED TO SWAP THE DATA, DO NOT SWAP THE NODES."*  
+Using buble sort, the hardest part is swapping two nodes, do not think about "real swapping", we only need the data place in proper position, right?
+
