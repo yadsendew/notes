@@ -53,9 +53,26 @@
 2. Stack:  need `&stackPtr` 
 	- Push:  
 		```c
+		void Push(NodePtr *topPtr, char value){
+			NodePtr newPtr = (NodePtr) malloc(sizeof(Node));
+			if (newPtr != NULL){
+				newPtr->data = value;
+				newPtr->nextPtr = *topPtr;
+				*topPtr = newPtr;
+			} else {
+				printf("%c not inserted. No memory avaible.\n", value);
+			}
+		}
 		```
 	- Pop:  
 		```c
+		int Pop(NodePtr *topPtr){
+			NodePtr freePtr = *topPtr;
+			char popValue = (*topPtr)->data;
+			*topPtr = (*topPtr)->nextPtr;
+			free(freePtr);
+			return popValue;
+		}
 		```
 3. Queue: need `&headPtr` and `&tailPtr`
 	- Enqueue:  
