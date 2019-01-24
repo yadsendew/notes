@@ -13,30 +13,14 @@ int main(){
 			case 1:
 				printf("Enter the value: "); scanf(" %c", &item);
 				
-				/*
-				1. Linked list:
-					Insert(&headPtr, item);
-				2. Stack:
-					
-				3. Queue:
-					Enqueue(&headPtr, &tailPtr, item);
-				*/
+				/* Case 1 */
 				
 				Print(headPtr);
 				break;
 			case 2:
 				if ( !isEmpty(headPtr)){
 					printf("Enter the value: "); scanf(" %c", &item);
-					/*	
-					1. Linked list	
-						if (Delete(&headPtr, item) != '\0'){
-							printf("%c is deleted.\n", item);
-						} else printf("%c is not existed in the list.\n");
-					2. 
-					3. Queue:
-						item = Dequeue(&headPtr, &tailPtr);
-						printf("%c has been dequeue.\n", item);
-					*/	
+					/* Case 2 */	
 				}
 				Print(headPtr);
 				break;
@@ -51,3 +35,23 @@ int main(){
 	return 0;
 }
 ```
+## Case 1:
+1. Linked list:  
+        `Insert(&headPtr, item);`
+2. Stack:  
+        ``
+3. Queue:  
+        `Enqueue(&headPtr, &tailPtr, item);`
+## Case 2:
+1. Linked list	
+    ```
+    if (Delete(&headPtr, item) != '\0'){
+        printf("%c is deleted.\n", item);
+    } else printf("%c is not existed in the list.\n");
+    ```
+2. 
+3. Queue:
+    ```
+    item = Dequeue(&headPtr, &tailPtr);
+    printf("%c has been dequeue.\n", item);
+    ```
