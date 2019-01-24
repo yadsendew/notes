@@ -3,16 +3,16 @@
 ```c
 struct Student {
       char Name[20];
-      int ID;
-      int Age;
       char Class[20];
+      int Code;
+      int Age;
 };
 
 struct Student input(){
     struct Student s1;
     printf("Enter name: "); gets(s1.Name);
     printf("Enter class: "); gets("%s", s1.Class);
-    printf("Enter grade: "); scanf("%f", &s1.Grade);
+    printf("Enter code: "); scanf("%f", &s1.Code);
     printf("Enter age: "); scanf("%d", &s1.Age);
     return s1;
 }
@@ -32,9 +32,9 @@ Note: Should place `gets(`_string_ `)` above a `scanf(`_number_`)`
 ```
 struct Student {
       char Name[20];
-      int ID;
-      int Age;
       char Class[20];
+      int Code;
+      int Age;
 };
 void input(struct Student *a){
     // a->Name là biến string, nó đã là pointer nên không cần thêm &.
