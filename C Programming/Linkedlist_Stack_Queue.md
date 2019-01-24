@@ -181,7 +181,7 @@ int main(){
     ```
 2. Stack:  
     ```
-    Push(&stackPtr, value)
+    Push(&stackPtr, item);
     ```
 3. Queue:  
     ```
@@ -197,7 +197,7 @@ int main(){
     ```
 2. Stack:  
     ```
-    printf("The popped value is %d.\n", Pop(&stackPtr));
+    printf("The popped value is %c.\n", Pop(&stackPtr));
     ```
 3. Queue:
     ```
