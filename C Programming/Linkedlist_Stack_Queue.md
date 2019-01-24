@@ -201,7 +201,6 @@ int main(){
     ```
 3. Queue:
     ```
-    printf("Enter the value: "); scanf(" %c", &item);
     item = Dequeue(&headPtr, &tailPtr);
     printf("%c has been dequeue.\n", item);
     ```
