@@ -17,7 +17,7 @@ void Instruction(){
 	);
 }
 int isEmpty(NodePtr startPtr/stackPtr/headPtr){
-	return headPtr == NULL;
+	return startPtr/stackPtr/headPtr == NULL;
 }
 void Print(NodePtr currentPtr){
 	if (currentPtr == NULL){
@@ -46,13 +46,13 @@ int main(){
 			case 1:
 				printf("Enter the value: "); scanf(" %c", &item);
 				/* Case 1 */
-				Print(headPtr);
+				Print(startPtr/stackPtr/headPtr);
 				break;
 			case 2:
-				if ( !isEmpty(headPtr)){
+				if ( !isEmpty(startPtr/stackPtr/headPtr)){
 				    /* Case 2 */	
 				}
-				Print(headPtr);
+				Print(startPtr/stackPtr/headPtr);
 				break;
 			default:
 				printf("Your choice must be 1, 2 or 3!\n");
