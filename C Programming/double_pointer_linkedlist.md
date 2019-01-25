@@ -24,4 +24,4 @@ Now `stackPtr` points to `firstNode` (2). We want to call `stackPtr` by the Push
     Push(&stackPtr, "Phat");
     ```
 
-**Call by reference of a pointer variable, forms a double pointer.**
+**Call by reference of a pointer variable (i.e. stackPtr), forms a double pointer.**
