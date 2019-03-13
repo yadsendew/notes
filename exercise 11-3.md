@@ -67,3 +67,11 @@ T matrix<T>::frobNorm(){
     return norm;
 }
 ```
+## 5. Test tạo class và gọi hàm của class sử dụng template.
+```cpp
+matrix<int> mat1(3);
+mat1.input();
+mat1.frobNorm();
+
+matrix<float> 
+```
